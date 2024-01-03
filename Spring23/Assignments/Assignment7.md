@@ -10,11 +10,11 @@ In the case of these examples, the malware writers were lazy and did not use a s
 
 For your report, submit your decryption program, along with the decrypted secret.txt file. Show your work by showing a screenshot of the decryption function in Ghidra updated with human-readable labels. Explain how your decryption works.
 
-ransomware1.zip [Download ransomware1.zip](ref?) 
+ransomware1.zip [Download ransomware1.zip](https://github.com/tolvumadur/Reverse-Engineering-Class/blob/main/Spring23/Samples/binaries/ransomware1.zip) 
 
-ransomware2.zip [Download ransomware2.zip](ref?) 
+ransomware2.zip [Download ransomware2.zip](https://github.com/tolvumadur/Reverse-Engineering-Class/blob/main/Spring23/Samples/binaries/ransomware2.zip) 
 
-ransomware3.zip [Download ransomware3.zip(Required for grad students only)](ref?)
+ransomware3.zip [Download ransomware3.zip(Required for grad students only)](https://github.com/tolvumadur/Reverse-Engineering-Class/blob/main/Spring23/Samples/binaries/ransomware3.zip)
 
 The extraction password for these samples is `nmsu_re`
 

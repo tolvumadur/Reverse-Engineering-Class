@@ -20,7 +20,7 @@ Fortunately, there are tools that already exist to make this job much easier. We
 
 ## How to get started:
 
-Install [pwntools](https://docs.pwntools.com/en/stable/) for python and download the victim program: [pizza](#ref?).
+Install [pwntools](https://docs.pwntools.com/en/stable/) for python and download the victim program: [pizza](https://github.com/tolvumadur/Reverse-Engineering-Class/blob/main/Spring23/Samples/binaries/pizza).
 
 Run the program to see how it works. Can you get it to crash? Can you use format strings to make something strange happen?
 
