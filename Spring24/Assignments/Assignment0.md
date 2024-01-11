@@ -4,7 +4,7 @@ Just like a chemistry lab would teach you to properly use tools like [calorimete
 
 ## System Isolation
 
-In this course, you will be statically and dynamically analyzing malware. This means that you will actually run the malware, or parts of the malware. It is essential that this malware be isolated. The main technique reverse engineers use to protect ourselves and others is isolation. We isolate the malware from interacting with the hardware of our actual computer by analyzing it inside a virtual machine. We will be extra careful in this course and investigate these malware samples targeting Windows on virtual machines running on a Linux-based, type-2 hypervisor. 
+In this course, you will be statically and dynamically analyzing malware. This means that you will actually run the malware, or parts of the malware. It is essential that this malware be isolated. The main technique reverse engineers use to protect ourselves and others is isolation. We isolate the malware from interacting with the hardware of our actual computer by analyzing it inside a virtual machine. We will be extra careful in this course and investigate these malware samples targeting Windows on virtual machines running on a Linux-based hypervisor. 
 
 ## Network Isolation
 
@@ -12,21 +12,47 @@ To further prevent our malware from escaping, we will eliminate the networking c
 
 ## System Setup
 
-Start with a Unix-based OS like Linux or MacOS. If you usually use a Windows machine, you will need to enable dual booting. If you don't want to lose secure boot or Bitlocker, you can also create a live flash drive with persistent storage to boot your laptop into Linux. You can give yourself more hard drive space by shrinking your main C: drive volume and creating some blank space that can be formatted into another filesystem.
+Start with a Unix-based OS like Linux or MacOS. If you usually use a Windows machine, you will need to enable dual booting. If you don't want to lose secure boot or Bitlocker, you can also create a live flash drive with persistent storage to boot your laptop into Linux. You can give yourself more hard drive space by shrinking your main C: drive volume and creating some blank space that can be formatted into another filesystem. 
 
-Install a type-2 hypervisor of your choice. We suggest (and will support) VirtualBox. 
+### Hardware Assistance
 
-Download a Windows 10 ISO [here](https://www.microsoft.com/en-us/software-download/windows10).
+If you experience hardware challenges, we can also look into getting you set up on an ESXI machine available thanks to generous support from Fordham University, the NSA, and the NSF. Talk to Dr. Reynolds to get an account set up. Also talk to the COG staff to get a VMWare student license to connect to your account on our ESXi server.
 
-If you are on a Windows machine, you might find it easier to change your HTTP User-Agent to avoid needing to use the Microsoft download tool. For example, you can emulate an Android device in Chrome's developer console and get the regular download page.
+### Getting a Windows 11 VM
 
-## Removing Networking Capabilities
+Install a type-2 hypervisor of your choice. 
+If you want to use VMWare tooling, contact the COG staff to get a student account.
 
-Use your hypervisor's menus to remove all network adapters for the virtual machine. 
+Download a Windows 11 ISO [here](https://www.microsoft.com/en-us/software-download/windows11). Use it to create a new virtual machine and install the OS. Create a local-authentication account, rather than using a Microsoft account. Tell Windows you will add a license key later.
+
+*If you downloading from a Windows machine, you might find it easier to change your HTTP User-Agent to avoid needing to use the Microsoft download tool. For example, you can emulate an Android device in Chrome's developer console and get the regular download page.*
 
 ## Virtual Machine Snapshots
 
-Before you begin any reverse engineering work, I recommend taking a [snapshot](https://www.pugetsystems.com/support/guides/virtualbox-4-using-snapshots-1914/) of your virtual machine. Then you can revert back to that snapshot where no malware has ever been run on the system. Snapshots are large, however, so you should be strategic about when you use them--especially if you have limited hard drive space. 
+Before you begin any reverse engineering work, I recommend taking a [snapshot](https://www.pugetsystems.com/support/guides/virtualbox-4-using-snapshots-1914/) of your virtual machine. Then you can revert back to that snapshot where no malware has ever been run on the system. Snapshots can be large, however, so you should be strategic about when you use them--especially if you have limited hard drive space. 
+
+## Disabling Windows Defender
+
+*These instructions were tested with Windows 11 23H2*
+
+Once upon a time, it was important to have an antivirus system on your Windows machines. However, Windows Defender has grown to be quite effective in detecting and removing malware. So effective, in fact, that when you load in malware to analyze in this class it will often be quarantined and deleted within a few seconds. Your first job is to disable it.
+
+### Motivation
+
+Windows 11 does not want you to remove Windows Defender, or turn it off.
+You are working at a disadvantage in Windows because you won't have the level of control you might be used to with a root account on *NIX systems.
+
+Windows defender is a complex distributed system, built of many interoperating components. It can be temporarily be turned off quite easily, but getting it off long-term is quite difficult. Some of these components are designed to detect and block malware when it tries to disable Windows Defender. If you think about it, we are doing exactly what malware would want to do!
+
+### Disabling Windows Defender
+
+
+
+
+
+## Removing Networking Capabilities
+
+Use your hypervisor's menus to remove all network connectivity for the virtual machine. Take a snapshot.
 
 ## What to turn in and how
 
