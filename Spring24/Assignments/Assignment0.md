@@ -107,7 +107,7 @@ Then boot back into normal mode. Run `taskschd.msc` as an administrator and disa
 - Windows Defender Scheduled Scan
 - Windows Defender Verification
 
-Verify that Windows Defender has been disabled in settings. Reboot and verify that Windows Defender has not re-enabled itself.
+Reboot.Verify that Windows Defender has been disabled in settings. Reboot and verify that Windows Defender has not re-enabled itself.
 
 ## Installing Flare-VM
 
