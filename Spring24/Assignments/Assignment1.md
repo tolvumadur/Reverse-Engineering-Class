@@ -113,6 +113,17 @@ Debugging shellcode is tricky, when you start executing code off the stack GDB g
 
 [GDB Command Cheat Sheet](https://darkdust.net/files/GDB%20Cheat%20Sheet.pdf)
 
+#### examine what the instruction RIP is pointing at, and the next two after it:
+```
+x/3i $rip
+```
+
+#### set a breakpoint at a specific memory address. In this case address 0x401300
+```
+b *0x401300
+```
+
+
 ### Golf:
 
 Sometimes, code injection must fit into a small buffer. As a fun challenge, once you have a working shellcode, see how much smaller you can make it. Can you make it work in less than 50 bytes? Less than 40? 30? (The one I wrote to prep for teaching this is 35 bytes long - can you beat that?).
