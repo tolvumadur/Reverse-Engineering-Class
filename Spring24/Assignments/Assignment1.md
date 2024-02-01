@@ -111,7 +111,7 @@ with open("shellcode", "rb") as f:
 
 Debugging shellcode is tricky, when you start executing code off the stack GDB gets confused and some of its convenience functions go away. We'll practice debugging in class.
 
-(GDB Command Cheat Sheet)[https://darkdust.net/files/GDB%20Cheat%20Sheet.pdf]
+[GDB Command Cheat Sheet](https://darkdust.net/files/GDB%20Cheat%20Sheet.pdf)
 
 ### Golf:
 
