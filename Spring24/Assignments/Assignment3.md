@@ -33,11 +33,11 @@ Answer the following in complete sentences:
 
 ## Your First Crackme
 
-Download the this [crackme](https://crackmes.one/static/crackme/5da31ebc33c5d46f00e2c661.zip).
+Download this [crackme](https://crackmes.one/static/crackme/5da31ebc33c5d46f00e2c661.zip).
 
 Open it both with Ghidra and IDA. To access the decompiler in IDA you will need to use their cloud decompiler. This crackme is ok to send to them for decompilation. In general, cloud decompilers (which are gaining popularity as a way to make sure reverse engineers actually pay for services instead of pirating) are an operational security risk.
 
-It is built for a Linux machine, and is not guaranteed to be malware-free. So run it either on your virtual machine's WSL terminal, or make a Linux VM to test with.
+Solve the crackme by figuring out what password it is expecting. It is built for a Linux machine, and is not guaranteed to be malware-free. So run it either on your virtual machine's WSL terminal, or make a Linux VM to test with.
 
 ## What to Submit
 
