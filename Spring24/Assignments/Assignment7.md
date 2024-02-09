@@ -1,21 +1,21 @@
-# Reverse Engineering Ransomware
+# Detecting DLL Injection
 
-A very relevant challenge for today's reverse engineers is figuring out how to stop ransomware. A large company, organization, or government entity stands to lose millions or billions of dollars if their data is encrypted and they cannot recover it. Reverse engineers who figure out a way to undo ransomware without paying the ransom are heroes.
+This week corresponds with textbook chapter 12. We will be dissecting "real" malware again, so remember your lab safety protocols!
 
-[![Watch the video](https://img.youtube.com/vi/DdVC1eVfZUI/default.jpg)](https://youtu.be/DdVC1eVfZUI)
+We've learned in class how malware loaders inject evil threads into legitimate programs, often using library loading as an attack vector. This week, you will be preparing malware analysis reports, but this time we will be focusing on what we can learn by observing library injection in action.
 
-Of course, with a modern block cipher, you won't be able to decrypt any files without finding the key. However, the ransomware needs the key to be able to encrypt things, so sometimes dynamic analysis can uncover the key. If the malware authors were very unsophisticated, the key may be stored within the ransomware program, itself. We'll watch this example in class of a reverse engineer breaking down an ESXI ransomware - and see where the malware authors were careful, and where they were not:
+We will use the malware from Lab 12-1 for this week's assignment. We will need our RE skills honed by doing crackmes in order to understand what is going on.
 
-In the case of these examples, the malware writers were lazy and did not use a sophisticated encryption scheme and did not hide the key very well. Your job is to write a program which can decrypt the two encrypted files in each of these samples. The ransomware program is included - and contains enough information for you to reverse engineer how to decrypt files.
+To get full credit for the lab, answer the following, including a relevant Ghidra screenshot which backs up your answer. A text explanation alone doesn't show that you've followed through in Ghidra. A screenshot alone doesn't show that you understand what is going on.
 
-For your report, submit your decryption program, along with the decrypted secret.txt file. Show your work by showing a screenshot of the decryption function in Ghidra updated with human-readable labels. Explain how your decryption works.
+ 
 
-ransomware1.zip [Download ransomware1.zip](https://github.com/tolvumadur/Reverse-Engineering-Class/blob/main/Spring23/Samples/binaries/ransomware1.zip) 
+1) Prove that the loader is using DLL injection. (Don't forget a relevant snapshot in Ghidra.)
 
-ransomware2.zip [Download ransomware2.zip](https://github.com/tolvumadur/Reverse-Engineering-Class/blob/main/Spring23/Samples/binaries/ransomware2.zip) 
+2) Identify the process that will be injected into. Seeing a string in Ghidra isn't sufficient -- explain how the process gets selected.
 
-ransomware3.zip [Download ransomware3.zip(Required for grad students only)](https://github.com/tolvumadur/Reverse-Engineering-Class/blob/main/Spring23/Samples/binaries/ransomware3.zip)
+3) Identify the entry point of the DLL injection. Where is DllMain?
 
-The extraction password for these samples is `nmsu_re`
+4) This malware does something every ______ seconds. How often, and where is the loop where that waiting happens?
 
-**As decided at the end of class, although there exists a clever way to reuse the decryption program for any file, everyone is expected to have reverse engineered ransomware1. If you kept up with us in class, you only need to write a decryption program. You may use the clever way for ransomware2 as long as it is bundled nicely into a script to automate the process of decryption. Grad students, you also need to RE ransomware2 or ransomware3 using what we learned in class.**
+5) What does the malware do every _______ seconds?

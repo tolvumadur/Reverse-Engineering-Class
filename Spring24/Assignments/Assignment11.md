@@ -47,7 +47,7 @@ context(arch='amd64', os='linux', endian='little', word_size=64)
 #shellcode = asm(shellcraft.amd64.linux.sh())
 
 #print(f"Shellcode: {shellcode.hex().upper()}")
-#print(len(shellcode)
+#print(len(shellcode))
 
 input1 = b"Cantinflas"
 
