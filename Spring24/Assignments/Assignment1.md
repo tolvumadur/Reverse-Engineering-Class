@@ -134,6 +134,8 @@ Often times injection requires that shellcode contain no NULL bytes. Your shellc
 
 ### Submit:
 
+Just like the first week, submit a markdown report with a title, summary, and:
+
 1. A code block containing your assembly instructions for your shellcode
 2. A step-by-step explanation of your assembly code and how it sets up the system call
 Report how many bytes total are in your assembly, and include the whole thing in ascii
