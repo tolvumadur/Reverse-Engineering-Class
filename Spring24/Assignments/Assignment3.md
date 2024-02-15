@@ -33,7 +33,7 @@ Answer the following in complete sentences:
 
 ## Your First Crackme
 
-Download this [crackme](https://crackmes.one/static/crackme/5da31ebc33c5d46f00e2c661.zip).
+Download this [crackme](https://crackmes.one/static/crackme/5da31ebc33c5d46f00e2c661.zip). Password is `crackmes.one`.
 
 Open it both with Ghidra and IDA. To access the decompiler in IDA you will need to use their cloud decompiler. This crackme is ok to send to them for decompilation. In general, cloud decompilers (which are gaining popularity as a way to make sure reverse engineers actually pay for services instead of pirating) are an operational security risk.
 
