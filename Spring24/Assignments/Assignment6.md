@@ -6,15 +6,25 @@ Here are 5 crackme options to solve this week. If you are a grad student, you ne
 
 The password to extract each of these is "crackmes.de"
 
-[Crackme 1](http://crackmes.cf/users/seveb/crackme05/download/crackme05.tar.gz) (Make a program that can output valid serial numbers for crackme05, you get both a 32-bit and 64-bit version) [Alternative Download](https://crackmes.dreamhosters.com/users/seveb/crackme05/download/crackme05.tar.gz)
+[Crackme 1](http://crackmes.cf/users/seveb/crackme05/download/crackme05.tar.gz) (Make a program that can output valid serial numbers for crackme05, you get both a 32-bit and 64-bit version) 
 
-[Crackme 2](http://crackmes.cf/users/adamziaja/crackme1/download/crackme1.tar.gz) (Make a program that can create valid username/password pairs to unlock the success response from crackme1) [Alternative Download](https://crackmes.dreamhosters.com/users/adamziaja/crackme1/download/crackme1.tar.gz)
+[Alternative Download](https://crackmes.dreamhosters.com/users/seveb/crackme05/download/crackme05.tar.gz)
 
-[Crackme 3](http://crackmes.cf/users/twistedtux/first_keygenme/download/keygenme.tgz) (Make a program to create valid passwords for keygenMe) [Alternative Download](https://crackmes.dreamhosters.com/users/twistedtux/first_keygenme/download/keygenme.tgz)
+[Crackme 2](http://crackmes.cf/users/adamziaja/crackme1/download/crackme1.tar.gz) (Make a program that can create valid username/password pairs to unlock the success response from crackme1) 
 
-[Crackme 4](http://crackmes.cf/users/hmx0101/decryptme_1/download/Decryptme%231.zip) (Figure out what key will decrypt the message in the pop-up box using DecryptMe -- This one runs in Windows) [Alternative Download](https://crackmes.dreamhosters.com/users/hmx0101/decryptme_1/download/Decryptme#1.zip)
+[Alternative Download](https://crackmes.dreamhosters.com/users/adamziaja/crackme1/download/crackme1.tar.gz)
 
-[Crackme 5](http://crackmes.cf/users/seveb/crackme04/download/crackme04.tar.gz) (Make a program that can output valid serial numbers for crackme04, you get both a 32-bit and 64-bit version. You don't need to change any of the other crackmes to solve them, but you do need to patch this one to get it past the self-destruct instructions so it will actually ask for a serial number) [Alternative Download](https://crackmes.dreamhosters.com/users/seveb/crackme04/download/crackme04.tar.gz)
+[Crackme 3](http://crackmes.cf/users/twistedtux/first_keygenme/download/keygenme.tgz) (Make a program to create valid passwords for keygenMe) 
+
+[Alternative Download](https://crackmes.dreamhosters.com/users/twistedtux/first_keygenme/download/keygenme.tgz)
+
+[Crackme 4](http://crackmes.cf/users/hmx0101/decryptme_1/download/Decryptme%231.zip) (Figure out what key will decrypt the message in the pop-up box using DecryptMe -- This one runs in Windows) 
+
+[Alternative Download](https://crackmes.dreamhosters.com/users/hmx0101/decryptme_1/download/Decryptme%231.zip)
+
+[Crackme 5](http://crackmes.cf/users/seveb/crackme04/download/crackme04.tar.gz) (Make a program that can output valid serial numbers for crackme04, you get both a 32-bit and 64-bit version. You don't need to change any of the other crackmes to solve them, but you do need to patch this one to get it past the self-destruct instructions so it will actually ask for a serial number) 
+
+[Alternative Download](https://crackmes.dreamhosters.com/users/seveb/crackme04/download/crackme04.tar.gz)
 
 ## Report Format
 
