@@ -31,15 +31,17 @@ RegShot allows you to take snapshots of directories as well. Identify at least o
 **Note in your report the answers to these questions:** 
 - What files or directories did you see changed?
 - Does this appear to be for persistence, or something else?
-- What clues (Indicators of Compromise) could someone look for in their filesystem to detect an NjRAT infection?
+- What clues (Indicators of Compromise) could someone look for in their filesystem to detect this NjRAT infection?
 
 ## FakeNet
 
-Revert to a pre-NjRAT VM snapshot, and turn on FakeNet. Run NjRAT again, and watch the logs to see NjRAT's behavior on the network.
+Revert to a pre-NjRAT VM snapshot, and turn on FakeNet. Run NjRAT again, and watch the logs to see NjRAT's behavior on the network. 
+
+You may need to set up a network interface on your VM. Most hypervisors will allow you to create a non-Internet-connected interface. FakeNet-NG will show a live feed of network activity when it is running properly, and you should take note of what Windows is already doing in the background.
 
 **Note in your report the answers to these questions:** 
 - What did NjRAT do on the network?
-- What DNS names did it look up?
-- What protocol did it use to try to contact its command and control network?
+- What DNS name(s) did it look up?
+- Investigate that DNS name -- is this a known malicious domain, or an attacker abusing a legitimate service? Why do you think so?
 - What indicators of compromise could a network administrator look for to identify if any of their machines are infected with this same malware?
 
