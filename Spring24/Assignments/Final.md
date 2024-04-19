@@ -15,6 +15,12 @@ This concept map must be digitally generated, and be turned in in .PDF format. I
 
 Every concept must be used in only one place. The concept map must be strongly connected in the graph theory sense.
 
+The concept map will consist of nodes from the list below, and edges that you will create. Each edge should have a 1-3 word description of the nature of the connection.
+
+Example:
+
+[<img src="example.jpg">]()
+
 ### Suggestions
 
 Managing all these connections. I suggest using a flow-charting tool like:
@@ -76,7 +82,7 @@ I recommend an average degree of ~3 for each node, and make the effort to have r
 - NSA
 - Process Injection
 - Virus
-- <YOUR NAME HERE>
+- \<YOUR NAME HERE\>
 - Debug
 - Segmentation Fault
 - Network Isolation
