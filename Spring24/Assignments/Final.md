@@ -45,6 +45,10 @@ A concept map that is a mess of connections is likewise incompletely thought out
 
 I recommend an average degree of ~3 for each node, and make the effort to have relatively few connection-line crossovers. A few nodes will have many connections, and others only one or two.
 
+For those concerned about grade borderlines, a well thought out concept map that follows these requirements, and builds logical connections, is likely to recieve a 90%+.
+Also remember that the grade scale may be adjusted slightly in your favor based on the overall performance of the class.
+At this point, it is likely that a small shift will occur in your favor.
+
 ## List of Terms to Concept-Map
 
 - Thread
